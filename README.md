@@ -1,8 +1,8 @@
 # DLL exports ordinal and function name report script for Ghidra
 
-This Python script for Ghidra will write a table of function names and corresponding ordinals of a DLL, when Dependency Walker fails to show both the function name and the ordinal.
+This Python script for Ghidra will write a table of function names and corresponding ordinals that a .dll-file exports, when Dependency Walker or other tools fails to show both the function name and the ordinal.
 
-This script will write them anyway by using Ghidra, but you require the .pdb file as well for this process.  In case you do not have loaded and auto-analyzed the .pdb-file, it will just report what it can (usually just a handful of functions).
+This script will write them anyway by using Ghidra, but requires the .pdb file as well for this process.  In case the .pdb-file isn't loaded and auto-analyzed, it will just report what it can (usually just a handful of functions).
 
 Based on idea implemented here: https://github.com/NationalSecurityAgency/ghidra/blob/master/Ghidra/Features/Base/src/main/java/ghidra/app/util/opinion/LibrarySymbolTable.java#L106 
 
